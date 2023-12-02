@@ -7,6 +7,8 @@ URL-REGEX,https:\/\/www\.washingtonpost\.com\/subscribe\/paywall\/get-softwall,R
 URL-REGEX,https?://.*\.washingtonpost\.com\/.*\/pwapi-proxy\.min\.js,REJECT
 URL-REGEX,https:\/\/ev\.nation\.africa\/acd\/api\/.*\/widgets\/templates\/paywall,REJECT
 URL-REGEX,https:\/\/cdn\.ampproject\.org\/v0\/amp-connatix-player.*\.js,REJECT
+URL-REGEX,https:\/\/cdn\.ampproject\.org\/v0\/amp-access-.*\.js,REJECT
+URL-REGEX,https:\/\/cdn\.ampproject\.org\/v0\/amp-subscriptions-.*\.js,REJECT
 URL-REGEX,https:\/\/cdn\.theatlantic\.com\/tng\/static\/frontend\/dist\/theatlantic\/js\/bundle\/components\/.*\.js,REJECT
 URL-REGEX,https:\/\/(m.timesofindia.com|timesofindia\.indiatimes\.com)\/native_popup\.cms\?type=regionUnavailable.*,REJECT
 URL-REGEX,https:\/\/(m.timesofindia.com|timesofindia\.indiatimes\.com)\/subscription_css\/.*,REJECT
