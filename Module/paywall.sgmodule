@@ -275,15 +275,6 @@ cdn\.ampproject\.org header-del Cookie
 https?://.*\.wsj.com header-del Cookie
 https?://telegraph.co.uk header-replace User-Agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 https?://www.quora.com header-del Referer
-https?://.*\.sina.cn header-del Content-Type
-https?://.*\.sina.com.cn header-del Content-Type
-https?://.*\.douban.com header-replace Accept text/html,website/xhtml+xml,website/xml;q=0.9,*/*;q=0.8
-https?://.*\.douban\.com header-replace User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
-https?://.*\.douban.com header-del Cookie
-https?://.*\.sina.cn header-del Cookie
-https?://.*\.sina.com.cn header-del Cookie
-https?://.*\.sina.cn header-replace User-Agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-https?://.*\.sina.com.cn header-replace User-Agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 https?://.*\.ft\.com header-replace User-Agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 ^https://theinitium.com header-del User-Agent
 ^https://theinitium.com header-add Cookie "Mozilla / 5.0(Linux; Android 6.0.1; Nexus 5X Build / MMB29P) AppleWebKit / 537.36(KHTML, like Gecko) Chrome / 80.0.3987.92 Mobile Safari / 537.36(compatible; Googlebot / 2.1; +http://www.google.com/bot.html)Accept-Language: en-us"
