@@ -146,7 +146,7 @@ https://www.nknews.org header-replace User-Agent "Mozilla/5.0 (compatible; Googl
 https://americanaffairsjournal.org header-del Cookie
 https://time.com header-del Cookie
 https?://www.usatoday.com header-replace User-Agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-https://www\.haaretz\.(com|co\.il) header-replace User-Agent "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.html)"
+#https://www\.haaretz\.(com|co\.il) header-replace User-Agent "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.html)"
 https://www\.haaretz\.(com|co\.il) header-del Cookie
 https://www.discovermagazine.com header-del Cookie
 https://www.commentarymagazine.com header-del Cookie
