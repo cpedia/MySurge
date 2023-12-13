@@ -1,0 +1,21 @@
+#!name=Bypass Paywall for WSJ
+#!desc=Bypass Paywall on Surge ios
+
+[Rule]
+URL-REGEX,https:\/\/cdn\.cxense\.com\/|cdn\.ampproject\.org\/v\d\/amp-subscriptions-.+\.js,REJECT
+
+[URL Rewrite]
+https://(.*)\.wsj\.com/articles/ https://$1\.wsj\.com/amp/articles/ 307
+
+
+[Header Rewrite]
+https?://.*\.wsj.com header-add Referer https://www.drudgereport.com/
+https?://.*\.wsj.com header-del Cookie
+https?://.*\.wsj.com header-replace User-Agent "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
+
+
+[MITM]
+hostname = %APPEND% wsj.com, *.wsj.com
+
+[Script]
+WSJ = type=http-response,pattern=https:\/\/www\.wsj\.com\.+,requires-body=1,max-size=-1,control-api=1,script-path=https://raw.githubusercontent.com/cpedia/MySurge/main/Script/bpc/wsj.js,script-update-interval=0
