@@ -1,5 +1,5 @@
-let url = $request.url
 let body = $response.body
+console.log('loading Success-----------')
 
 if (/<\/html>|<\/body>/.test(body)) {
     body = body.replace('</body>', `
