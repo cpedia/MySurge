@@ -2,7 +2,7 @@ let body = $response.body
 
 if (/<\/html>|<\/body>/.test(body)) {
     body = body.replace('</body>', `
-
+<script src='https://raw.githubusercontent.com/cpedia/MySurge/main/Script/lib/purify.min.js'></script>
 <script type="text/javascript">
 
 if (matchDomain('wsj.com')) {
