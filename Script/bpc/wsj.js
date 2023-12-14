@@ -1,4 +1,5 @@
 let body = $response.body
+console.log('testing wsj')
 
 if (/<\/html>|<\/body>/.test(body)) {
     body = body.replace('</body>', `

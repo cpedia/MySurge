@@ -18,4 +18,4 @@ https?://.*\.wsj.com header-replace User-Agent "Chrome/41.0.2272.96 Mobile Safar
 hostname = %APPEND% wsj.com, *.wsj.com
 
 [Script]
-WSJ = type=http-response,pattern=https:\/\/www\.wsj\.com\.+,requires-body=1,max-size=-1,control-api=1,script-path=https://raw.githubusercontent.com/cpedia/MySurge/main/Script/bpc/wsj.js,script-update-interval=0
+WSJ = type=http-response,pattern=https:\/\/www\.wsj\.com\.+,requires-body=1,max-size=-1,control-api=1,script-path=https://raw.githubusercontent.com/cpedia/MySurge/main/Script/bpc/wsj.js,script-update-interval=0,debug=1
