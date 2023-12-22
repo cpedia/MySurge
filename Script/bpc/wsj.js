@@ -197,7 +197,7 @@ function externalLink(domains, ext_url_templ, url, text_fail = 'BPC > Full artic
   text_fail_div.id = 'bpc_archive';
   text_fail_div.setAttribute('style', 'margin: 20px; font-size: 20px; font-weight: bold; color: red;');
   let parser = new DOMParser();
-  text_fail = text_fail.replace(/\[([^\]]+)\]/g, "<a href='$1' target='_blank' style='color: red'>$1</a>");
+  text_fail = text_fail.replace(/\\[([^\\]]+)\\]/g, "<a href='$1' target='_blank' style='color: red'>$1</a>");
   let doc = parser.parseFromString('<span>' + text_fail + '</span>', 'text/html');
   let elem = doc.querySelector('span');
   text_fail_div.appendChild(elem);
